@@ -34,25 +34,30 @@ def get_image_size(fname):
         else:
             return
         return width, height
- 
- 
- 
-start_svg_tag = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink"
-"""
- 
-end_svg_tag = """</svg>"""
-for files in os.listdir(input("Enter image paths[/Users/v.syroiezhin/Desktop/github/raster2vector/]")):
-    if files.endswith(".png"): # u can try another format
-      width, height = get_image_size(files)
-      img_file = open(files, 'rb')
-      base64data = base64.b64encode(img_file.read())
-      base64String = f'<image xlink:href="data:image/png;base64,{base64data.decode("utf-8")}" width="{width}" height="{height}" x="0" y="0" />'
-      svg_size = f'width="{width}px" height="{height}px" viewBox="0 0 {width} {height}">'
-      f = open(os.path.splitext(files)[0]+".svg",'w')
-      f.write( start_svg_tag + svg_size + base64String + end_svg_tag)
-      print ('Converted '+ files + ' to ' + os.path.splitext(files)[0]+".svg")
+
+def svg():
+    
+    start_svg_tag = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    """
+    end_svg_tag = """</svg>"""
+    
+    for image in os.listdir(os.getcwd()+ "/"): # Image must be in the folder with the program
+        if image.endswith(".jpg") or image.endswith(".png") or image.endswith(".gif"):
+            width, height = get_image_size(image)
+            img_file = open(image, 'rb')
+            base64data = base64.b64encode(img_file.read())
+            base64String = f'<image xlink:href="data:image/png;base64,{base64data.decode("utf-8")}" width="{width}" height="{height}" x="0" y="0" />'
+            svg_size = f'width="{width}px" height="{height}px" viewBox="0 0 {width} {height}">'
+            
+            if os.path.exists('result') == False: os.mkdir('result') # create a folder "result"
+            
+            svg = open("result/"+os.path.splitext(image)[0]+".svg",'w') # write the result to a folder
+            svg.write( start_svg_tag + svg_size + base64String + end_svg_tag)
+            print ('Converted '+ image + ' to ' + os.path.splitext(image)[0]+".svg")
+
+
+if __name__== '__main__':
+    svg()
