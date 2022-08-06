@@ -6,8 +6,8 @@
 
 ### 
 
-<table>
-<tr>
+<table style="padding: 0px">
+<tr style="padding: 0px">
 <td style="padding: 0px"><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/eng.png" alt="eng" width="128" height="128"></td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/rus.png" alt="rus" width="128" height="128"></td>
 </tr>
