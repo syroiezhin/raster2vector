@@ -6,12 +6,12 @@
 
 <table><tr><td> bitmaps </td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/eng.png" alt="eng" width="128" height="128"></td>
-<td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/rus.png" alt="rus" width="128" height="128"></td></tr></table>
+<td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/rus.png" alt="rus" width="128" height="128"></td></tr>
 
-<table><tr><td>vector №1</td>
+<tr><td>vector №1</td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/svg/eng%5Bf%5D.svg" alt="eng" width="128" height="128"></td>
-<td><img src="https://github.com/syroiezhin/raster2vector/blob/main/svg/rus%5Bf%5D.svg" alt="rus" width="128" height="128"></td></tr></table>
+<td><img src="https://github.com/syroiezhin/raster2vector/blob/main/svg/rus%5Bf%5D.svg" alt="rus" width="128" height="128"></td></tr>
 
-<table><tr><td>vector №2</td>
+<tr><td>vector №2</td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/svg/e%5Bs%5D.svg" alt="eng" width="128" height="128"></td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/svg/r%5Bs%5D.svg" alt="rus" width="128" height="128"></td></tr></table>
