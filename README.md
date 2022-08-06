@@ -6,9 +6,9 @@
 
 ### 
 
-<table>
-<tr>
-<td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/eng.png" alt="eng" width="128" height="128"></td>
+<table style="background: rgba(255,255,255,0.5)">
+<tr style="background: rgba(255,255,255,0.5)">
+<td style="background: rgba(255,255,255,0.5)"><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/eng.png" alt="eng" width="128" height="128"></td>
 <td><img src="https://github.com/syroiezhin/raster2vector/blob/main/image/rus.png" alt="rus" width="128" height="128"></td>
 </tr>
 </table>
